@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://telegra.ph/file/0657629f758a7df6a3e4f.jpg"
+GROUP_START_IMG = "https://telegra.ph/file/4d3ebfa9b222460fd21e0.jpg"
 
 FLARE_PHOTO = "https://telegra.ph/file/215572db3a2e1cb8f8f77.jpg"
 
@@ -89,7 +89,7 @@ PM_START_TEXT = """
 """
 
 HELP_STRINGS = """
-Hey there, I'm Flare Robot !
+Hey there, I'm Ani Robot !
 To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
 - /start: Starts me! You've probably already used this.
@@ -105,7 +105,7 @@ List of all the Modules:
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Add Ani Robot To Your Group",
+                            text=f"α∂∂ αиι яσвσт тσ уσυя gяσυρ",
                             url=f"http://t.me/Ani_robot_bot?startgroup=True")
                     ],
                    [
@@ -196,9 +196,9 @@ def test(update: Update, context: CallbackContext):
 @telethn.on(events.NewMessage(pattern="/check"))
 async def awake(event):
   ғʟᴀʀᴇ = event.sender.first_name
-  ғʟᴀʀᴇ = "**♡ I,m ғʟᴀʀᴇ ʀᴏʙᴏᴛ 愛** \n\n"
+  ғʟᴀʀᴇ = "**♡ I,m Ani Robot ʀᴏʙᴏᴛ 愛** \n\n"
   ғʟᴀʀᴇ += "**♡ I'm Working With sᴇMxʏ Speed**\n\n"
-  ғʟᴀʀᴇ += "**♡ ғʟᴀʀᴇ: LATEST Version**\n\n"
+  ғʟᴀʀᴇ += "**♡ Ani: LATEST Version**\n\n"
   ғʟᴀʀᴇ += "**♡ My Creator:** [SURU](t.me/@sweetttu_!)\n\n"
   ғʟᴀʀᴇ += "**♡ ᴀɴʏ ɪssᴜᴇs ᴄᴏɴᴛᴀᴄᴛ ʜᴇʀᴇ @ANIXSURU_SUPPORT **\n\n"
   ғʟᴀʀᴇ += "**♡ ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ 💘💘💘**\n\n"
