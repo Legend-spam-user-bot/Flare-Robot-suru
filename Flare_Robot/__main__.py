@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-GROUP_START_IMG = "https://telegra.ph/file/2cd6f97e0cf04d63cabf4.mp4"
+GROUP_START_IMG = "https://telegra.ph/file/0657629f758a7df6a3e4f.jpg"
 
-FLARE_PHOTO = "https://telegra.ph/file/2a171330f0ad1fc02465c.jpg"
+FLARE_PHOTO = "https://telegra.ph/file/215572db3a2e1cb8f8f77.jpg"
 
 PM_START_TEXT = """
 ────「 {} 」────
@@ -85,7 +85,7 @@ PM_START_TEXT = """
 ➖➖➖➖➖➖➖➖➖➖➖
 • *Uptime:* `{}`
 ➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities[.](https://telegra.ph/file/852e96d6c59f2ccad32df.jpg) ××
+➛ Try The Help Buttons Below To Know My Abilities[.](https://telegra.ph/file/59eec88af08c0032661a7.jpg) ××
 """
 
 HELP_STRINGS = """
@@ -94,7 +94,6 @@ To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
-- /donate: Gives you info on how to support me and my creator.
 
 All commands can be used with the following: / !
 List of all the Modules:
@@ -106,27 +105,36 @@ List of all the Modules:
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"Add Flare To Your Group",
-                            url=f"https://telegram.dog/@{BOT_USERNAME}?startgroup=true")
+                            text=f"Add Ani Robot To Your Group",
+                            url=f"http://t.me/Ani_robot_bot?startgroup=True")
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/OtaKu_Gang1"),
-                       InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(text="❔ about Ani Robot", ✺ Hey Darling I'm Ani Robot, a powerful group management bot built to help you manage your group easily. ✺
+
+                                                                        ✪ I can restrict users.
+                                                                        ✪ I can greet users with customizable welcome messages and even set a group's rules.
+                                                                        ✪ I have an advanced anti-flood system.
+                                                                        ✪ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                                                                        ✪ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                                                                        ✪ I check for admins' permissions before executing any command and more stuffs
+
+                                                                            Ani's licensed under the GNU General Public License v3.0
+                                                                            Click on button bellow to get basic help for Ani Robot."),
+                       
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="🚑 Support",
-                             url=f"https://telegram.dog/Freia_Support"),
+                             text= "🤖 Support",
+                             url=f"https://telegram.dog/ANIXSURU_SUPPORT"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/Freia_Updates")
+                             text= "🤖 Updates",
+                             url="https://t.me/ANIXSURU_SUPPORT")
                      ], 
     ]
 
 
 
-DONATE_STRING = """Durov Is my Cousin By The Way.."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -199,15 +207,15 @@ def test(update: Update, context: CallbackContext):
 async def awake(event):
   ғʟᴀʀᴇ = event.sender.first_name
   ғʟᴀʀᴇ = "**♡ I,m ғʟᴀʀᴇ ʀᴏʙᴏᴛ 愛** \n\n"
-  ғʟᴀʀᴇ += "**♡ I'm Working With sᴇxʏ Speed**\n\n"
+  ғʟᴀʀᴇ += "**♡ I'm Working With sᴇMxʏ Speed**\n\n"
   ғʟᴀʀᴇ += "**♡ ғʟᴀʀᴇ: LATEST Version**\n\n"
-  ғʟᴀʀᴇ += "**♡ My Creator:** [ᴀsᴛᴀ](t.me/@{OWNER_USERNAME})\n\n"
-  ғʟᴀʀᴇ += "**♡ ᴀɴʏ ɪssᴜᴇs ᴄᴏɴᴛᴀᴄᴛ ʜᴇʀᴇ @Freia_Support **\n\n"
+  ғʟᴀʀᴇ += "**♡ My Creator:** [SURU](t.me/@sweetttu_!)\n\n"
+  ғʟᴀʀᴇ += "**♡ ᴀɴʏ ɪssᴜᴇs ᴄᴏɴᴛᴀᴄᴛ ʜᴇʀᴇ @ANIXSURU_SUPPORT **\n\n"
   ғʟᴀʀᴇ += "**♡ ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ 💘💘💘**\n\n"
   FLARE_BUTTON = [
       [
-          Button.url("🚑 Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("📢 Updates", "https://t.me/Freia_Updates")
+          Button.url("🚑 Support", f"https://t.me/ANIXSURU_SUPPORT"),
+          Button.url("📢 Updates", "https://t.me/ANIXSURU_SUPPORT")
       ]
   ]
   await telethn.send_file(
@@ -265,7 +273,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_animation(
-            GROUP_START_IMG, caption= "I won't sleep until I satisfy you!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            GROUP_START_IMG, caption= "I won't sleep until I satisfy you🔥!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -274,11 +282,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/Freia_Support",
+                            url=f"https://telegram.dog/ANIXSURU_SUPPORT",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://t.me/Freia_Updates",
+                            url="https://t.me/ANIXSURU_SUPPORT",
                         ),
                     ]
                 ]
@@ -397,7 +405,7 @@ def get_help(update: Update, context: CallbackContext):
                         [
                             InlineKeyboardButton(
                                 text="Help",
-                                url="t.me/Flare_Robot?start=ghelp_{}".format(
+                                url="t.me/Ani_robot_bot?start=ghelp_{}".format(
                                     context.bot.username, module,
                                 ),
                             ),
@@ -413,7 +421,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Help",
-                            url="t.me/Flare_Robot?start=help".format(context.bot.username),
+                            url="t.me/Ani_robot_bot?start=help".format(context.bot.username),
                         ),
                     ],
                 ],
@@ -608,7 +616,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True,
         )
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 5009739318 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -656,7 +664,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[hey! I am back from OYO!!](https://telegra.ph/file/926039375cac9825e1e58.jpg)", parse_mode=ParseMode.MARKDOWN)
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[hey! I am back from OYO!!](https://telegra.ph/file/ea0194bf72cebc525ff3b.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
